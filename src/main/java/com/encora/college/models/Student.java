@@ -1,18 +1,23 @@
 package com.encora.college.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Student {
 
-    private String student_name;
+    private String studentName;
 
     @Id
-    private String student_id;
+    private String studentId;
 
-    private String department_id;
+    private String departmentId;
 }

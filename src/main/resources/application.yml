@@ -1,5 +1,5 @@
 server:
-  port: 8084
+  port: 8081
 spring:
   application:
     name: STUDENT-SERVICE
@@ -16,3 +16,6 @@ spring:
       ddl-auto: update
     generate-ddl: true
     show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
